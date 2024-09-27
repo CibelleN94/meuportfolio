@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-8"
 
 /*Cores portfolio
 #efe6dc brancomeioacinzentado
@@ -8,7 +8,6 @@
 black */
 
 
-
 *{
     margin: 0px;
     padding: 0px;
@@ -16,142 +15,138 @@ black */
 }
 
 body {
-        background-color:#efe6dc;
-        width: 100vw;
-        height: 100vh;
+    background-color:#efe6dc;
+    width: 100%;
+    
 }
 
 header {
-    background-color:#CAA19C;
-    width: 100%;
-    padding: 20px;
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    
-}
-
-
-img#icon {
-    margin: 20px;
-    margin-left: 50px;
-    border: 5px solid #efe6dc;
-    border-radius: 50%;
-    
-}
-img#icon:hover {
-   
-    transform: scale(1.1);
-    transition: 1s;
-
-}
-
-
-h1 {
-    flex: 1 0 200px;
-    color:#7B786B;
-    margin-left: 8px;
-    margin-top: 10px;    
-    font-size: 1.8em;;
-}
-
-
-
-h2#n1 {
-   
-    color:#CAA19C;
-    font-size: 1.9em;
-    margin: 10px;
-    margin-top: 20px;
-    margin-left: 50px;
-      
-    
-}
-
-p {
-    flex: 1 1 200px;
-    margin-left: 5px;
-    color: #7B786B;
-    font-size: 1.2em;
-}
-
-h2#n2 {
-    color: #efe6dc;
-    text-align: center;
-    background-color: #CAA19C;
-    font-size: 1.8em;
-    width: 30%;
-    padding: 5px;
-    margin-left: 50px;
-    margin-top: 20px;
-    
-
-}
-
-h2#n3 {
-    color:#efe6dc;
-    text-align: center;
+    flex: 0 1 200px;    
+    justify-content: space-evenly;    
     background-color:#CAA19C;
-    width: 30%;
-    height: 50px;
-    font-size: 1.8em;
-    padding: 5px;
-    margin: 10px;
-    margin-left: 50px;
-     
-}
-nav {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 80px;
-    justify-content: flex-end;
-    
-}
-
-nav> a {
-    color: #efe6dc;
-    background-color:#AB482D;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius:3px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px;
     padding: 10px;
 }
 
+img#fotocibelle {
+    border-radius: 50%;
+    border:3px solid #7B786B;
+    margin-top: 10px;
+}
+
+img#fotocibelle:hover {
+    
+}
+h1 {
+    flex: 0 0 200px;
+    color: #efe6dc;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 28px;      
+}
+
+p#p1 {
+    color: #7B786B;
+    line-height: 1.1em;
+    margin-left: 30px;
+    height: 5px;
+    font-size: 1.3em;   
+}
+
+span {
+    color:#7B786B ;
+
+}
+
+nav {
+    flex-flow: row wrap; 
+    align-self: center;
+    justify-content: flex-end;
+    margin: 10px;       
+}
+
+nav> a {
+    background-color: #7B786B;
+    color: #efe6dc;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px;
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;   
+
+}
+
 nav > a:hover {
-    text-decoration: underline;
+    background-color: #CAA19C;
+    transition: 1s;
+    text-decoration:underline;
+}
+nav > a#github {
+    background-color: #CAA19C;
+    color: #efe6dc;
+    border: solid 2px #7B786B;
+    border-radius: 50px;
+    padding: 10px;
+}
+nav > a#github:hover {
     background-color: #7B786B;
     transition: 1s;
-    
-}
-div#skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-div#ferramentaslogos {
-    display: flex;
-    align-items: center;
 }
 
-img#imagemlogos1:hover, img#imagemlogos2:hover {
-    transform: scale(1.1);
+
+
+h2#sobre {    
+    color:  #CAA19C;
+    font-size: 2em;
+    margin-left: 30px;
+    height: 10px;
+    
+}
+
+
+h2#experiencias {
+    background-color: #CAA19C;
+    color: #efe6dc;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 30%;
+}
+
+h2#skills {    
+    background-color: #CAA19C;
+    color: #efe6dc;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 30%;
+    
+}
+h2#experiencias:hover, h2#skills:hover {
+    background-color: #7B786B;
     transition: 1s;
 }
 
+
+div#skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center
     
- h3#n1 {
+}
+
+img#imagemlogos1 {
+    flex-flow: 1 1 200px;
+    
+    
+    
+
+}
+
+div#ferramentas {
     text-align: center;
-    color: #AB482D;
-    
     
 }
-
-h2#n2:hover, h2#n3:hover {
-  background-color: #7B786B;
-  transition: 1s;
-}
-
-

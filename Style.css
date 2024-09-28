@@ -44,10 +44,7 @@ header {
   flex: auto; 
   justify-content:flex-end;
   height: 20px;
-  
 
-
-       
 }
 
 img#iconola {
@@ -63,6 +60,7 @@ div#ola {
 
 }
 button {
+    
     background-color: #CAA19C;
     color: #efe6dc;
     padding: 10px;
@@ -80,6 +78,7 @@ button:hover {
     color: #7B786B;
     transition: 0.8s;
 }
+
 
 
 h1 {
@@ -146,13 +145,14 @@ p#p2 {
 }
 
 hr {
-    width: 50%;
+    text-align: center;
     height: 1px;
     border: 0px;
     border-top: 1px solid #AB482D;
     background-color: #dddddd;
-    line width: 100%;
+    line width: 50%;
     height: 1px;
+    
     
 }
 

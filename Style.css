@@ -17,11 +17,6 @@ black */
 
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
 
-
-
-
-
-
 *{
     margin: 0px;
     padding: 0px;
@@ -31,6 +26,7 @@ black */
 }
 
 body {
+    display: block;
     background-color:#efe6dc;
     width: 100%;
     font-family: "Poppins", sans-serif;
@@ -51,21 +47,28 @@ header#conteiner {
   height: 20px;
 }
 img#iconola { 
-    
-    width: 4%;
-    margin-left: 10px;
+    width: 4%;    
+    margin-left: 10px;  
+  
       
 }
 
 div#ola {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   justify-content: center;  
+    align-items:center;
     padding: 5%;
+    
    
     
     
+}
+span {
+    font-size:0.4em;
+    font-family:"Poppins", sans-serif;
+    color: #7B786B;
+    font-weight: 400;  
+
 }
 
 
@@ -81,10 +84,10 @@ img#fotocibelle {
 }
 h1 {
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
     color: #CAA19C;
-    text-align:center;
     font-family: "Chilanka", cursive;
     font-size: 2.4em;
     gap: 1rem;
@@ -95,12 +98,12 @@ h1 {
     
 }
 .p1n {
+
     color: #7B786B;
     
     line-height: 1.1em;
-    font-size: 1.2em;
-    text-align: center;
-   padding-bottom: 8px;
+    font-size: 1.2em;    
+   padding-bottom: 2px;
     
     
       
@@ -142,9 +145,11 @@ nav > a#github:hover {
 }
 
 .p2n {
- color: #7B786B;
+    
+    color: #7B786B;
+    text-align: center;
     line-height: 1.1em;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-left: 5px;
     margin-bottom: 20px;
     font-size: 0.9em;
@@ -154,34 +159,37 @@ nav > a#github:hover {
     
 }
 
-hr {
-    text-align: center;
-    height: 1px;
-    border: 0px;
-    border-top: 1px solid #AB482D;
-    background-color: #dddddd;
-    line width: 50%;
-    height: 1px;
-    
-    
-}
-
 div#sobre {
     display: flex;
     flex-flow: row wrap;    
     justify-content: space-evenly;
+    flex-flow: row wrap;
     
 }
 
-h2#sobre, h2#skills {
+ h2#skills, h2#experiencias {
+    flex-flow: row wrap;
     background-color: #CAA19C;
     color: #efe6dc;
     font-size: 1.5em;
-    font-weight: 300;
-    margin-left: 8px;   
+    font-weight: 300;  
     padding: 0 3.5rem;
     width:40%;
     border-radius: 3px;
+    text-align: center;
+}
+
+h2#sobre {
+    width:80%;
+    flex-flow: row wrap;
+    background-color: #CAA19C;
+    color: #efe6dc;
+    font-size: 1.5em;
+    font-weight: 300;  
+    padding: 0 3.5rem;
+    border-radius: 3px;
+    text-align: center;
+
 }
 div#skills {
     display: flex;
@@ -199,29 +207,21 @@ h2#sobre:hover, h2#sobre:focus, h2#skills:hover, h2#skills:focus,h2#experiencias
     text-shadow: 1px 1px 0px #242322;
 }
 
+
+    
+
 div#experiencias {
     display: flex;
     flex-flow: row wrap;    
     justify-content: space-evenly;  
     
     
-}
-h2#experiencias {
-    background-color: #CAA19C;
-    color: #efe6dc;
-    font-size: 1.5em;
-    font-weight: 300;
-    margin-left: 8px;   
-    padding: 0 3.5rem;
-    width:40%;
-    border-radius: 3px;
-}
-   
+}  
 
 h3#ferramentas {
     text-align: center;
-    font-size: 1.5em;
-    font-weight: 300;
+    font-size: 1em;
+    font-weight:400;
     margin-left: 8px;   
     padding: 0 3.5rem;
     width:40%;
@@ -229,17 +229,13 @@ h3#ferramentas {
 }
 
 div#imagemlogos2 {
-    display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: flex-start; 
-
-    
+    display: flex;    
 
     
 }
 
 footer {
-    color: #7B786B;
+    color: #53524b;
     background-color: #CAA19C;
     text-align: center;
    

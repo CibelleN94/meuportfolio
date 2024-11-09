@@ -1,231 +1,202 @@
 @charset "UTF-8";
 
 /*Cores portfolio
-#efe6dc brancomeioacinzentado
-#CAA19C rosa
-#AB482D marrom
-#7B786B cinza
-black */
+#FFF6D5 branco rosado
+#774EFF roxo claro
+#1E005B roxo escuro
+#E2E1FF azul acinzentado
+##da5095 rosa
+ */
+
 
 /*fontes*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lexend+Mega:wght@100..900&family=Lilita+One&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
 
-*{
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
-    
+
+
 }
 
 body {
     display: block;
-    background-color:#efe6dc;
+    background-color: #FFF6D5;
     width: 100%;
     font-family: "Poppins", sans-serif;
-    
-    
-}
-
-header#conteiner {
-  
-  background-color: #CAA19C;
-  padding: 28px 8%;
-  width: 100%;
-  border-bottom: solid 1px #807e798a;
-  border-radius: 2px;
-  display: flex;
-  flex: auto; 
-  justify-content:flex-end;
-  height: 20px;
-   
 
 }
-img#olaicon {
-    width:4vw;
-    height: 10vh;
 
-   
-}  
-div#ola {
-    display: flex;    
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;    
-    text-align: center;
-    gap: 2em;
+header {
+
+    background-color: #774EFF;
+    padding: 28px 8%;
+    width: 100%;
+    border-bottom: solid 1px #807e798a;
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+    height: 20px;
+
+
 }
 
-
-p#p1 {
-    
-   text-align: center;
-    
-
-    margin-bottom: 20px;
-    font-size: 1.2em;
-    color: #53524b;
-   
-    
-}
-h1 {
-
-    font-family:"Lilita One", sans-serif;
-    line-height: 1em;
-    font-size: 3.8em;
-    text-align: left;
-    color: #CAA19C;
-    
-   
-}
-
-
-
-img#cibellefoto {
-    width: 10vw;
-    border-radius: 50%;
-    border: solid 6px #CAA19C;
-   
-   
-    
-}
 nav {
-    flex-flow: row wrap; 
+    flex-flow: row wrap;
     align-self: center;
-         
+
 }
 
-nav> a {
-    color: #efe6dc;
+nav>a {
+    color: #FFF6D5;
     font-size: 1em;
     gap: 48px;
     padding: 5px;
     text-align: center;
-    text-decoration: none;   
-    
+    text-decoration: none;
+
 
 }
 
-nav > a:hover {
-    color: #7B786B;
+nav>a:hover {
+    color: #da5095;
     transition: 0.8s;
-    text-decoration:underline;
-    
-    
+    text-decoration: underline;
+
+
 }
-nav > a#github {
-    color:#7B786B;    
-    padding: 8px;
+nav > a.active {
+    color:#1E005B;
+    font-weight: bolder;
 }
-nav > a#github:hover {
-    color: #efe6dc;
+
+
+nav>a#github:hover {
+    color: #FFF6D5;
     transition: 0.8s;
+    color: #da5095;
 }
 
-.p2n {
-    
-    color: #7B786B;
-    text-align: left;
-    line-height: 1.1em;
-    margin-top: 15px;
-    margin-left: 5px;
-    margin-bottom: 20px;
-    font-size: 1em;
-    overflow-wrap: normal;   
-
-
-}
-
-div#sobre {
+.aboutme {
     display: flex;
-    flex-flow: row wrap;    
+    justify-content: space-around;
+    margin: 50px;
+}
+
+img#inicio {
+    position: relative;
+    right:100px;
+    bottom:20px;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+
+}
+
+h1 {
+    display: flex;
+    position: relative;
+    left: 125px;
+    top: 50px;
+    color: #774EFF;
+    font-family: "Gluten";
+    padding: 10px;
+    font-size: 3.5em;
+    margin: 10px;
+    gap: 5px;
+
+}
+
+p#aboutme {
+    display: flex;
+    font-size: 1.3em;
     justify-content: center;
-    flex-flow: row wrap;
-    width: 30%;
-    
+    position: relative;
+    bottom: 180px;
+    right: 200px;
+    padding: 10px;
+    font-family: "Comfortaa";
+    color: #343435;
 }
 
- h2#skills, h2#experiencias {
-    flex-flow: row wrap;
-    background-color: #CAA19C;
-    color: #efe6dc;
-    font-size: 1.5em;
-    font-weight: 300;  
-    padding: 0 3.5rem;
-    width:40%;
-    border-radius: 3px;
-    text-align: center;
-}
-
-h2#sobre {
-    width:80%;
-    flex-flow: row wrap;
-    background-color: #CAA19C;
-    color: #efe6dc;
-    font-size: 1.5em;
-    font-weight: 300;  
-    padding: 0 3.5rem;
-    border-radius: 3px;
-    text-align: center;
-
-}
-div#skills {
+p#aboutme2 {
     display: flex;
-    flex-flow: row wrap;
-    
-    align-items: self-start;
-
-   
-} 
-
-h2#sobre:hover, h2#sobre:focus, h2#skills:hover, h2#skills:focus,h2#experiencias:hover, h2#experiencias:focus {
-    background-color: #7B786B;
-    transition: 1s;
-    transform: translateX(5px) scale(1);
-    text-shadow: 1px 1px 0px #242322;
-}
-
-
-    
-
-div#experiencias {
-    display: flex;
-    flex-flow: row wrap;    
-    justify-content: space-evenly;  
-    
-    
-}  
-
-h3#ferramentas {
-    text-align: center;
+    justify-content: center;
+    color: #343435;
     font-size: 1em;
-    font-weight:400;
-    margin-left: 8px;   
-    padding: 0 3.5rem;
-    width:40%;
-    border-radius: 3px;
+    position: relative;
+    bottom: 185px;
+    right: 124px;
+    font-family: "Comfortaa";
+
+
+}
+.btncontact {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 350px;
+    bottom: 170px;
+    background-color:#E2E1FF;
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 1px 0px #da5095;
+   
+}
+.btncontact > h2 > a {
+    text-decoration: none;
+    color: #774EFF;
+    
+}
+span.material-symbols-outlined {
+    vertical-align: middle;
+    color: #da5095;
+
+
 }
 
-div#imagemlogos2 {
-    display: flex;    
+h2#descript  {
+    color: #da5095;
+    font-size: 2.0em;
+    text-align: center;
 
-    
+}
+p#descript {
+    color:#343435;
+    text-align: center;
+    font-family: "Comfortaa";
+}
+
+.btncurriculo {
+    display: flex;
+    position: relative;
+    left: 600px;
+    margin-top: 20px;
+    background-color:#E2E1FF;
+    justify-content: center;
+    color: #774EFF;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 1px 0px #da5095;
+   
+}
+.btncurriculo > a {
+    text-decoration: none;
 }
 
 footer {
-    color: #53524b;
-    background-color: #CAA19C;
+    background-color: #1E005B;
     text-align: center;
-   
-   
+    margin-top: 10px;
+    color: #E2E1FF;
 }

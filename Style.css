@@ -42,6 +42,7 @@ header {
     padding: 28px 8%;
     width: 100%;
     height: 50px;
+    margin-bottom: 50px;
     border-bottom: solid 1px #807e798a;
     display: flex;
     flex: auto;
@@ -55,11 +56,13 @@ header {
 }
 
 nav {
+    display: flex;
     background-color: #774EFF;
     flex-flow: row wrap;
     align-self: center;
     position: fixed;
-
+    right: 100px;
+    gap: 20px;
 
 
 }
@@ -67,7 +70,6 @@ nav {
 nav>a {
     color: #FFF6D5;
     font-size: 1em;
-    gap: 48px;
     padding: 5px;
     text-align: center;
     text-decoration: none;
@@ -107,7 +109,7 @@ img#inicio {
     bottom: 5px;
     border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     width: 250px;
-    height: 250px;
+    height: 300px;
     margin-top: 50px;
 
 }
@@ -116,7 +118,7 @@ h1 {
     display: flex;
     position: relative;
     left: 110px;
-    top: 60px;
+    top: 110px;
     color: #774EFF;
     font-family: "Gluten";
     padding: 10px;
@@ -124,6 +126,13 @@ h1 {
     margin: 10px;
     gap: 5px;
 
+}
+
+p#down {
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    color: #da5095;
 }
 
 p#aboutme {
@@ -155,7 +164,7 @@ p#aboutme2 {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 350px;
+    left: 345px;
     bottom: 170px;
     background-color: #E2E1FF;
     width: 150px;
@@ -171,6 +180,11 @@ p#aboutme2 {
 
 }
 
+.btncontact>h2>a:hover {
+    color: #da5095;
+    transition: 0.6s;
+}
+
 span.material-symbols-outlined {
     vertical-align: middle;
     color: #da5095;
@@ -179,11 +193,12 @@ span.material-symbols-outlined {
 }
 
 h2#descript {
-    color: #da5095;
-    font-size: 2.0em;
+    color: #774EFF;
+    font-size: 2.5em;
     text-align: center;
     position: relative;
     right: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -191,12 +206,13 @@ p#descript {
     color: #343435;
     text-align: center;
     font-family: "Comfortaa";
+    line-height: 1.5em;
 }
 
 .btncurriculo {
     display: flex;
     position: relative;
-    left: 370px;
+    left: 810px;
     margin-top: 20px;
     background-color: #E2E1FF;
     justify-content: center;
@@ -213,48 +229,49 @@ p#descript {
     text-decoration: none;
 }
 
-div.skills {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 60px;
-    color: #da5095;
-    padding: 10px;
-
-
-
+.skills {
+    text-align: center;
+    margin: 20px;
+    margin-top: 40px;
 }
 
-hr {
-    border: #da5095 solid 3px;
-    transform: rotate(90deg);
-    width: 100px;
-    position: absolute;
-    left: 600px;
+h3 {
+    color: #774EFF;
+    font-size: 2.5em;
 }
 
-.icons {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-
+p#skills {
+    font-family: "Comfortaa";
+    margin-top: 10px;
 }
 
-#icons2 {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 25px;
-    gap: 5px;
-}
-
-#icons3 {
+#iconstec {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-    position: relative;
-    right: 55px;
+    vertical-align: middle;
+
+}
+
+.projetos {
+    text-align: center;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+h4#projetos {
+    font-size: 2.5em;
+    color: #774EFF;
+
+}
+
+p#projetos {
+    font-family: "Comfortaa";
+}
+#imgprojetos {
+    display: flex;
+    justify-content: center;
+
 }
 
 footer {

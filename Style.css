@@ -193,7 +193,27 @@ p#descript {
 .btncurriculo > a {
     text-decoration: none;
 }
+div.skills {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    color: #da5095;
+    
+}
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+    
+}
 
+#icons2 {
+    gap: 30px;
+    
+}
+#icons3 {
+    gap: 30px;
+}
 footer {
     background-color: #1E005B;
     text-align: center;

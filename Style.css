@@ -28,7 +28,10 @@
 body {
     display: block;
     background-color: #FFF6D5;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
+    height: 100%;
     font-family: "Poppins", sans-serif;
 
 }
@@ -38,18 +41,26 @@ header {
     background-color: #774EFF;
     padding: 28px 8%;
     width: 100%;
+    height: 50px;
     border-bottom: solid 1px #807e798a;
     display: flex;
     flex: auto;
     justify-content: flex-end;
-    height: 20px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+
 
 
 }
 
 nav {
+    background-color: #774EFF;
     flex-flow: row wrap;
     align-self: center;
+    position: fixed;
+
+
 
 }
 
@@ -71,8 +82,9 @@ nav>a:hover {
 
 
 }
-nav > a.active {
-    color:#1E005B;
+
+nav>a.active {
+    color: #1E005B;
     font-weight: bolder;
 }
 
@@ -91,20 +103,20 @@ nav>a#github:hover {
 
 img#inicio {
     position: relative;
-    right:100px;
-    bottom:20px;
+    right: 100px;
+    bottom: 5px;
     border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     width: 250px;
     height: 250px;
-    margin: 20px;
+    margin-top: 50px;
 
 }
 
 h1 {
     display: flex;
     position: relative;
-    left: 125px;
-    top: 50px;
+    left: 110px;
+    top: 60px;
     color: #774EFF;
     font-family: "Gluten";
     padding: 10px;
@@ -132,30 +144,33 @@ p#aboutme2 {
     color: #343435;
     font-size: 1em;
     position: relative;
-    bottom: 185px;
+    bottom: 178px;
     right: 124px;
     font-family: "Comfortaa";
 
 
 }
+
 .btncontact {
     display: flex;
     justify-content: center;
     position: relative;
     left: 350px;
     bottom: 170px;
-    background-color:#E2E1FF;
+    background-color: #E2E1FF;
     width: 150px;
     padding: 5px;
     border-radius: 10px;
     box-shadow: 4px 4px 1px 0px #da5095;
-   
+
 }
-.btncontact > h2 > a {
+
+.btncontact>h2>a {
     text-decoration: none;
     color: #774EFF;
-    
+
 }
+
 span.material-symbols-outlined {
     vertical-align: middle;
     color: #da5095;
@@ -163,14 +178,17 @@ span.material-symbols-outlined {
 
 }
 
-h2#descript  {
+h2#descript {
     color: #da5095;
     font-size: 2.0em;
     text-align: center;
+    position: relative;
+    right: 20px;
 
 }
+
 p#descript {
-    color:#343435;
+    color: #343435;
     text-align: center;
     font-family: "Comfortaa";
 }
@@ -178,9 +196,9 @@ p#descript {
 .btncurriculo {
     display: flex;
     position: relative;
-    left: 600px;
+    left: 370px;
     margin-top: 20px;
-    background-color:#E2E1FF;
+    background-color: #E2E1FF;
     justify-content: center;
     color: #774EFF;
     width: 150px;
@@ -188,32 +206,57 @@ p#descript {
     padding: 5px;
     border-radius: 10px;
     box-shadow: 4px 4px 1px 0px #da5095;
-   
+
 }
-.btncurriculo > a {
+
+.btncurriculo>a {
     text-decoration: none;
 }
+
 div.skills {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 40px;
+    align-items: center;
+    margin-top: 60px;
     color: #da5095;
-    
+    padding: 10px;
+
+
+
 }
+
+hr {
+    border: #da5095 solid 3px;
+    transform: rotate(90deg);
+    width: 100px;
+    position: absolute;
+    left: 600px;
+}
+
 .icons {
     display: flex;
     justify-content: space-evenly;
-    gap:10px;
-    
+    position: relative;
+
 }
 
 #icons2 {
-    gap: 30px;
-    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 25px;
+    gap: 5px;
 }
+
 #icons3 {
-    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    right: 55px;
 }
+
 footer {
     background-color: #1E005B;
     text-align: center;

@@ -5,7 +5,7 @@
 #774EFF roxo claro
 #1E005B roxo escuro
 #E2E1FF azul acinzentado
-##da5095 rosa
+#da5095 rosa
  */
 
 
@@ -41,7 +41,7 @@ header {
     background-color: #774EFF;
     padding: 28px 8%;
     width: 100%;
-    height: 50px;
+    height: 8vh;
     margin-bottom: 50px;
     border-bottom: solid 1px #807e798a;
     display: flex;
@@ -51,14 +51,14 @@ header {
     top: 0px;
     z-index: 1;
 
-
-
 }
 
 nav {
     display: flex;
     background-color: #774EFF;
     flex-flow: row wrap;
+    height: 8vh;
+    padding: 5px;
     align-self: center;
     position: fixed;
     right: 100px;
@@ -216,6 +216,7 @@ p#descript {
     margin-top: 20px;
     background-color: #E2E1FF;
     justify-content: center;
+    align-items: center;
     color: #774EFF;
     width: 150px;
     text-align: center;
@@ -231,8 +232,10 @@ p#descript {
 
 .skills {
     text-align: center;
-    margin: 20px;
     margin-top: 40px;
+    background-color: #34343513;
+
+
 }
 
 h3 {
@@ -251,6 +254,7 @@ p#skills {
     align-items: center;
     vertical-align: middle;
 
+
 }
 
 .projetos {
@@ -267,10 +271,39 @@ h4#projetos {
 
 p#projetos {
     font-family: "Comfortaa";
+    color: #343435;
 }
+
+figure {
+    color: #343435;
+    font-family: "Comfortaa";
+    font-size: 0.8em;
+}
+
 #imgprojetos {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+
+
+
+}
+
+h3#formation {
+    position: relative;
+    left: 200px;
+    margin: 10px;
+    margin-top: 40px;
+    font-size: 2.8em;
+}
+
+.formation {
+    position: relative;
+    left: 200px;
+    padding: 20px;
+    font-family: "Comfortaa";
+    line-height: 1.9em;
+    background-color: #34343513;
+    width: 50%;
 
 }
 

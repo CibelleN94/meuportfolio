@@ -33,15 +33,15 @@ body {
     width: 100%;
     height: 100%;
     font-family: "Poppins", sans-serif;
-
+    
 }
 
 header {
 
     background-color: #774EFF;
-    padding: 28px 8%;
     width: 100%;
-    height: 8vh;
+    height: 10vh;
+    padding: 10px;
     margin-bottom: 50px;
     border-bottom: solid 1px #807e798a;
     display: flex;
@@ -166,8 +166,9 @@ p#aboutme2 {
     position: relative;
     left: 345px;
     bottom: 170px;
+    font-size: 0.8em;
     background-color: #E2E1FF;
-    width: 150px;
+    width: 120px;
     padding: 5px;
     border-radius: 10px;
     box-shadow: 4px 4px 1px 0px #da5095;
@@ -185,20 +186,26 @@ p#aboutme2 {
     transition: 0.6s;
 }
 
-span.material-symbols-outlined {
+span.material-icons {
     vertical-align: middle;
     color: #da5095;
 
 
 }
 
+.descript {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
 h2#descript {
+    text-align: center;
     color: #774EFF;
     font-size: 2.5em;
-    text-align: center;
-    position: relative;
-    right: 20px;
-    margin-bottom: 20px;
+    
 
 }
 
@@ -229,82 +236,57 @@ p#descript {
 .btncurriculo>a {
     text-decoration: none;
 }
-
-.skills {
-    text-align: center;
-    margin-top: 40px;
-    background-color: #34343513;
-
-
+.formation {
+    overflow: hidden;
 }
 
-h3 {
-    color: #774EFF;
-    font-size: 2.5em;
-}
 
-p#skills {
-    font-family: "Comfortaa";
-    margin-top: 10px;
-}
-
-#iconstec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-
-
-}
-
-.projetos {
-    text-align: center;
-    margin: 20px;
-    margin-top: 40px;
-}
-
-h4#projetos {
-    font-size: 2.5em;
-    color: #774EFF;
-
-}
-
-p#projetos {
-    font-family: "Comfortaa";
-    color: #343435;
-}
-
-figure {
-    color: #343435;
-    font-family: "Comfortaa";
-    font-size: 0.8em;
-}
-
-#imgprojetos {
-    display: flex;
-    justify-content: flex-start;
-
-
-
-}
-
-h3#formation {
+h3.formation {
     position: relative;
     left: 200px;
     margin: 10px;
     margin-top: 40px;
-    font-size: 2.8em;
+    
 }
 
-.formation {
+#h3formation {
+    text-align: center;
+    color: #774EFF;
+    font-size: 2em;
+    margin-top: 80px;
+    margin-bottom: 20px;
     position: relative;
-    left: 200px;
+
+}
+
+
+.formation2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-left: 40px;
     padding: 20px;
     font-family: "Comfortaa";
     line-height: 1.9em;
-    background-color: #34343513;
-    width: 50%;
+    background-color: #774EFF;
+    background: linear-gradient(to right, #774eff69,#FFF6D5 );   
+    border-radius: 3px;    
+    width: 40%;
 
+}
+
+.ferramentas {
+    display: flex;
+    background-color: #774EFF;
+    background: linear-gradient(to right, #774eff69,#FFF6D5 );
+    border: 1px #343435;
+    border-radius: 3px;
+    margin-right: 40px;
+    width: 50%;
+    height: 40vh;
+    align-items: center;
+    
 }
 
 footer {

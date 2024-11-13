@@ -94,7 +94,7 @@ nav > a::after {
     content: "";
     width: 0%;
     height: 5px;
-    background-color: #da5095;
+    background-color: #FFF6D5;
     transition: 0.5s ease-out;
  
 }
@@ -111,6 +111,10 @@ nav>a#github:hover {
     color: #da5095;
 }
 
+section.aboutme {
+    display: flex;
+}
+
 .aboutme {
     display: flex;
     justify-content: space-around;
@@ -118,6 +122,7 @@ nav>a#github:hover {
 }
 
 img#inicio {
+    display: flex;
     position: relative;
     right: 80px;
     bottom: 5px;
@@ -160,7 +165,7 @@ p#aboutme {
     right: 255px;
     padding: 5px;
     font-family: "Comfortaa";
-    color:#303030;;
+    color:#303030;
 }
 
 p#aboutme2 {
@@ -181,8 +186,8 @@ p#aboutme2 {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 370px;
-    bottom: 190px;
+    left: 365px;
+    bottom: 200px;
     font-size: 0.8em;
     background-color: #E2E1FF;
     width: 130px;
@@ -383,4 +388,66 @@ footer {
     text-align: center;
     margin-top: 10px;
     color: #E2E1FF;
+}
+
+
+@media screen and (max-width: 992px) {
+    nav, .btncontact{
+        display: none;
+
+    }
+
+   img#inicio {
+    align-items: center;
+    position: relative;
+    margin-right: 40px;
+    bottom: 5px; 
+   right: 250px;  
+    margin-top: 50px;
+    width: 100%;
+    
+   }
+   h1 {
+    flex-flow: row wrap;
+    position: relative;
+    left: 0;
+    margin-bottom: 5px ;
+    font-size: 3em;
+    top: 400px;      
+    
+    
+   }
+   p#aboutme {    
+    flex-flow: row wrap;
+    position: relative;
+    margin: 2px;
+    top: 100px;    
+    right: 0px;
+    padding: 5px;
+   
+   }
+   p#aboutme2 {
+    top:106px;
+    right: 0px;
+    left: 70px;
+    
+    font-family: "Comfortaa";
+    margin-bottom: 10px;
+   }
+p#down {
+    display: none;
+}
+.descript {
+    position: relative;
+    top: 100px;
+}
+p#descript {
+    text-align: left;
+    width: 70%;
+    background-color: #E2E1FF;
+    border-radius: 5px;
+    border: 1px solid #303030;
+    padding: 15px;
+}
+    
 }

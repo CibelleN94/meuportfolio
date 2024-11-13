@@ -54,7 +54,7 @@ header {
     justify-content: flex-end;
     position: fixed;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
 
 }
 
@@ -72,27 +72,36 @@ nav {
 
 }
 
-nav>a {
+nav > a {
+    position: relative;
     color: #FFF6D5;
     font-size: 1em;
     padding: 5px;
     text-align: center;
     text-decoration: none;
-
-
 }
-
-nav>a:hover {
-    color: #da5095;
-    transition: 0.8s;
-    text-decoration: underline;
-
-
-}
-
-nav>a.active {
+nav > a.active {
     color: #1E005B;
     font-weight: bolder;
+}
+nav > a:hover {
+    color: #1E005B;
+}
+nav > a::after {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: #da5095;
+    transition: 0.5s ease-out;
+ 
+}
+nav > a:hover::after {
+    width: 100%;
+
+
 }
 
 
@@ -100,12 +109,6 @@ nav>a#github:hover {
     color: #FFF6D5;
     transition: 0.8s;
     color: #da5095;
-}
-.darkmodelabel {
-    cursor: pointer;
-}
-.darkmodelabel::after {
-    content: 'off';
 }
 
 .aboutme {
@@ -116,20 +119,20 @@ nav>a#github:hover {
 
 img#inicio {
     position: relative;
-    right: 100px;
+    right: 80px;
     bottom: 5px;
     border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-    width: 250px;
-    height: 300px;
-    margin-top: 50px;
+    width: 300px;
+    height: 350px;
+    margin-top: 100px;
 
 }
 
 h1 {
     display: flex;
     position: relative;
-    left: 110px;
-    top: 110px;
+    left: 105px;
+    top: 150px;
     color: #774EFF;
     font-family: "Gluten";
     padding: 10px;
@@ -153,9 +156,9 @@ p#aboutme {
     font-size: 1.3em;
     justify-content: center;
     position: relative;
-    bottom: 180px;
-    right: 200px;
-    padding: 10px;
+    bottom: 230px;
+    right: 255px;
+    padding: 5px;
     font-family: "Comfortaa";
     color:#303030;;
 }
@@ -166,9 +169,10 @@ p#aboutme2 {
     color:#303030;;
     font-size: 1em;
     position: relative;
-    bottom: 178px;
-    right: 124px;
+    bottom: 210px;
+    right: 181px;
     font-family: "Comfortaa";
+    margin-bottom: 10px;
 
 
 }
@@ -177,14 +181,14 @@ p#aboutme2 {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 345px;
-    bottom: 170px;
+    left: 370px;
+    bottom: 190px;
     font-size: 0.8em;
     background-color: #E2E1FF;
-    width: 120px;
-    padding: 5px;
+    width: 130px;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 4px 4px 1px 0px #da5095;
+    box-shadow: 2px 2px 1px 0px #da5095;
 
 }
 
@@ -211,13 +215,13 @@ span.material-icons {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
 }
 
 h2#descript {
     text-align: center;
     color: #774EFF;
     font-size: 2.5em;
+    margin: 10px;
     
 
 }
@@ -238,16 +242,17 @@ p#descript {
     justify-content: center;
     align-items: center;
     color: #774EFF;
+    font-weight: bolder;
     width: 150px;
     text-align: center;
     padding: 5px;
     border-radius: 10px;
-    box-shadow: 4px 4px 1px 0px #da5095;
+    box-shadow: 2px 2px 2px 0px #da5095;
 
 }
-
 .btncurriculo>a {
     text-decoration: none;
+    color: #774EFF;
 }
 
 .formation {
@@ -272,50 +277,109 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
     margin-left: 40px;
     padding: 20px;
     font-family: "Comfortaa";
     line-height: 1.9em;
-    background-color: #774eff2f;
-    border: 1px #1e005b36 solid;   
-    border-radius: 3px;    
-    width: 40%;
-
-}
-.formation2:hover {
-    background-color: #da509562;
-    transition: 0.8s;
-}
-p#formation {
-    color: #303030;
+    background-color:#E2E1FF; 
+    border: 1px solid #3030306b;  
+    border-radius: 20px;    
+    width: 50%;
+    height: 50vh;
+    overflow: hidden;    
 }
 
-.tecnologias {
+
+
+
+.formation2::before {
+    content: "";
+    position: absolute;
+    width:900px;
+    height: 50%;
+    background-color: #da5095;
+    animation: animate 5s linear infinite;   
+
+}
+
+ @keyframes animate {
+    100% {
+        transform: rotate(360deg);
+    }
+ }
+
+ .formation2::after {
+    content: "";
+    position: absolute;
+    background-color:#E2E1FF;
+    inset: 5px;
+    border-radius: inherit;
+ }
+h4, p#formation {
+    color:#1E005B;   
+    z-index: 1;
+}
+h4 {
+    font-weight: bolder;
+}
+
+h3#tec {
     text-align: center;
     color: #774EFF;
     font-size: 2em;
     margin-top: 80px;
-    margin-bottom: 20px;
-    width: 92vw;  
+    margin-bottom: 40px;
+    
     
 }
 
-#imgtecnologias {
+.imgtecnologias {
     display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    background-color: #774eff2f;
-    border: 1px #1e005b36 solid; 
-    border-radius: 3px;
+    position: relative;
+    left: 310px;   
+    margin-bottom: 40px; 
+    background-color:#E2E1FF; 
+    border: 1px solid #3030306b;  
+    border-radius: 20px;    
     width: 60%;
-
-   
+    height: 20vh;
+    overflow: hidden;      
     
 }
 
+.imgtecnologias::before {
+    content: "";
+    position: absolute;
+    width:900px;
+    height:80%;
+    background-color: #da5095;
+    animation: animate 5s linear infinite;
+}
+.imgtecnologias::after {
+    content: "";
+    position: absolute;
+    background-color:#E2E1FF;
+    inset: 5px;
+    border-radius: inherit;
+ }
+
+#imgtec {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#imgtec:hover {
+    
+}
 footer {
-    background-color: #1E005B;
+    background-color:#774EFF;
     text-align: center;
     margin-top: 10px;
     color: #E2E1FF;

@@ -4,37 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Cibelle Nobrega</title>
   <link rel="shortcut icon" href="imagens/flor.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="Style.css">
-  
+
 </head>
 
 <body>
+  
   <main>
+    
     <header>
-     
+      <span id="burguer" class="material-icons" onclick="clickmenu()"> menu</span>
+      
       <div class="navbar">
-        <nav>
-          <a class="active" href="#">Home</a>
-          <a href="#">Sobre</a>
-          <a href="#">Experiências</a>
-          <a href="#">Skills</a>
-          <a href="#">Contato</a>
-          <a href="https://github.com/CibelleN94" id="github"><strong>Github</strong></a>
+
+        <nav id="navmenu">       
+
+          <ul onclick="clickmenu()">
+            <li class="active">Home</li>
+            <li>Sobre</li>
+            <li>Experiências</li>
+            <li>Skills</li>
+            <li>Contato</li>
+            <li id="github"><strong>Github</strong></li>
+          </ul>
         </nav>
       </div>
+
     </header>
     <section id="aboutme">
       <div class="aboutme">
-        <h1>Olá, sou a <br> Cibelle!</h1>
+        <h1>Olá, sou a <br>Cibelle!</h1>
         <img id="inicio" src="imagens/front in sampa.jpg" alt="foto de cibelle">
       </div>
       <p id="aboutme">Desenvolvo coisas e tal.</p>
-      <p id="aboutme2">Sou uma desenvolvedora do litoral <br> de São Paulo
-        que ama trabalhar com Front-End.</p>
+      <p id="aboutme2">Sou uma desenvolvedora do litoral <br>de São Paulo que ama trabalhar com Front-End.</p>
       <div class="btncontact">
         <h2 id="btncontact"><a
             href="https://wa.me/5513981135729?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento.%0AObrigada!">
@@ -62,6 +69,8 @@
     <div class="btncurriculo">
       <a href="linkcurriculo">Download CV</a> <img src="imagens/setarosa.svg" alt="iconedownload">
     </div>
+
+
     <div class="formation">
       <div id="h3formation">
         <h3> Formação</h3>
@@ -79,28 +88,39 @@
       </div>
     </div>
 
-    
-      <h3 id="tec">Tecnologias e Ferramentas</h3>
 
-      <div class="imgtecnologias">
-        <div id="imgtec">
-          <img src="imagens/html.png" alt="HTML" width="120" height="120">
-          <img src="imagens/css3.png" alt="HTML" width="120" height="120">
-          <img src="imagens/javascript.png" alt="HTML" width="120" height="120">
-          <img src="imagens/vscode.png" alt="HTML" width="120" height="120">
-          <img src="imagens/github2.svg" alt="HTML" width="60" height="60">
-          <img src="imagens/canva.png" alt="HTML" width="120" height="120">
-          <img src="imagens/ps.png" alt="HTML" width="120" height="120">
-        </div>
-      </div>
+    <h3 id="tec">Tecnologias e Ferramentas</h3>
 
-      <div class="project">
-        <h3>Projetos</h3>
-        <p>que eu desenvolvi</p>
-      </div>
+    <div class="imgtecnologias">
+
+      <img id="imgtec" src="imagens/html.png" alt="HTML" width="120" height="120">
+      <img id="imgtec" src="imagens/css3.png" alt="HTML" width="120" height="120">
+      <img id="imgtec" src="imagens/javascript.png" alt="HTML" width="120" height="120">
+      <img id="imgtec" src="imagens/vscode.png" alt="HTML" width="120" height="120">
+      <img id="imgtec" src="imagens/github2.svg" alt="HTML" width="60" height="60">
+      <img id="imgtec" src="imagens/canva.png" alt="HTML" width="120" height="120">
+      <img id="imgtec" src="imagens/ps.png" alt="HTML" width="120" height="120">
+
+    </div>
+    <div class="project">
+      <h3>Projetos</h3>
+      <p>que eu desenvolvi</p>
+    </div>
   </main>
-  <div class="conteiner">
- 
-  <footer>
-    <p>© 2024 | Cibelle Nobrega</p>
-  </footer>
+
+    <footer>
+      <p>© 2024 | Cibelle Nobrega</p>
+    </footer>
+  
+  <script> 
+    function clickmenu() {
+     if (navmenu.style.display == 'block') {
+       navmenu.style.display = 'none'
+    } else {
+       navmenu.style.display ='block'
+    }
+  
+    }
+
+  </script>
+  </body>

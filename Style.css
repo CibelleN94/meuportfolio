@@ -29,16 +29,16 @@ html {
     scroll-behavior: smooth;
 }
 
-body {    
+body {
     color: #FFF6D5;
     display: block;
-    background-color:;
+    background-color: ;
     margin: 0px;
     padding: 0px;
     width: 100%;
     height: 100%;
     font-family: "Poppins", sans-serif;
-    
+
 }
 
 header {
@@ -50,7 +50,6 @@ header {
     margin-bottom: 50px;
     border-bottom: solid 1px #807e798a;
     display: flex;
-    flex: auto;
     justify-content: flex-end;
     position: fixed;
     top: 0px;
@@ -58,9 +57,10 @@ header {
 
 }
 
-nav {
-    display: flex;
+nav  {
+    display:flex;
     background-color: #774EFF;
+    align-items: center;
     flex-flow: row wrap;
     height: 8vh;
     padding: 5px;
@@ -72,7 +72,9 @@ nav {
 
 }
 
-nav > a {
+ li {
+    display: inline;
+    align-items: center;
     position: relative;
     color: #FFF6D5;
     font-size: 1em;
@@ -80,35 +82,43 @@ nav > a {
     text-align: center;
     text-decoration: none;
 }
-nav > a.active {
+
+li.active {
     color: #1E005B;
     font-weight: bolder;
 }
-nav > a:hover {
+
+li:hover {
     color: #1E005B;
 }
-nav > a::after {
+
+li::after {
     position: absolute;
-    bottom: 10px;
+    bottom: 2px;
     left: 0;
     content: "";
     width: 0%;
     height: 5px;
     background-color: #FFF6D5;
     transition: 0.5s ease-out;
- 
+
 }
-nav > a:hover::after {
+
+li:hover::after {
     width: 100%;
 
 
 }
 
 
-nav>a#github:hover {
+li#github:hover {
     color: #FFF6D5;
     transition: 0.8s;
     color: #da5095;
+}
+
+span#burguer {
+    display: none;
 }
 
 section.aboutme {
@@ -165,13 +175,13 @@ p#aboutme {
     right: 255px;
     padding: 5px;
     font-family: "Comfortaa";
-    color:#303030;
+    color: #303030;
 }
 
 p#aboutme2 {
     display: flex;
     justify-content: center;
-    color:#303030;;
+    color: #303030;
     font-size: 1em;
     position: relative;
     bottom: 210px;
@@ -227,7 +237,7 @@ h2#descript {
     color: #774EFF;
     font-size: 2.5em;
     margin: 10px;
-    
+
 
 }
 
@@ -255,6 +265,7 @@ p#descript {
     box-shadow: 2px 2px 2px 0px #da5095;
 
 }
+
 .btncurriculo>a {
     text-decoration: none;
     color: #774EFF;
@@ -273,6 +284,7 @@ p#descript {
     margin-bottom: 20px;
 
 }
+
 h4 {
     color: #303030;
     font-weight: bold;
@@ -288,12 +300,12 @@ h4 {
     padding: 20px;
     font-family: "Comfortaa";
     line-height: 1.9em;
-    background-color:#E2E1FF; 
-    border: 1px solid #3030306b;  
-    border-radius: 20px;    
+    background-color: #E2E1FF;
+    border: 1px solid #3030306b;
+    border-radius: 20px;
     width: 50%;
     height: 50vh;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 
@@ -302,30 +314,33 @@ h4 {
 .formation2::before {
     content: "";
     position: absolute;
-    width:900px;
+    width: 900px;
     height: 50%;
     background-color: #da5095;
-    animation: animate 5s linear infinite;   
+    animation: animate 5s linear infinite;
 
 }
 
- @keyframes animate {
+@keyframes animate {
     100% {
         transform: rotate(360deg);
     }
- }
+}
 
- .formation2::after {
+.formation2::after {
     content: "";
     position: absolute;
-    background-color:#E2E1FF;
+    background-color: #E2E1FF;
     inset: 5px;
     border-radius: inherit;
- }
-h4, p#formation {
-    color:#1E005B;   
+}
+
+h4,
+p#formation {
+    color: #1E005B;
     z-index: 1;
 }
+
 h4 {
     font-weight: bolder;
 }
@@ -336,8 +351,8 @@ h3#tec {
     font-size: 2em;
     margin-top: 80px;
     margin-bottom: 40px;
-    
-    
+
+
 }
 
 .imgtecnologias {
@@ -346,32 +361,38 @@ h3#tec {
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 310px;   
-    margin-bottom: 40px; 
-    background-color:#E2E1FF; 
-    border: 1px solid #3030306b;  
-    border-radius: 20px;    
+    left: 310px;
+    margin-bottom: 40px;
+    background-color: #E2E1FF;
+    border: 1px solid #3030306b;
+    border-radius: 20px;
     width: 60%;
     height: 20vh;
-    overflow: hidden;      
-    
+    overflow: hidden;
+
 }
 
 .imgtecnologias::before {
     content: "";
     position: absolute;
-    width:900px;
-    height:80%;
+    width: 900px;
+    height: 80%;
     background-color: #da5095;
     animation: animate 5s linear infinite;
 }
+
 .imgtecnologias::after {
     content: "";
     position: absolute;
-    background-color:#E2E1FF;
+    background-color: #E2E1FF;
     inset: 5px;
     border-radius: inherit;
- }
+}
+
+.imgtecnologias>#imgtec {
+    display: flex;
+    align-items: center;
+}
 
 #imgtec {
     z-index: 1;
@@ -380,11 +401,9 @@ h3#tec {
     justify-content: center;
     gap: 5px;
 }
-#imgtec:hover {
-    
-}
+
 footer {
-    background-color:#774EFF;
+    background-color: #774EFF;
     text-align: center;
     margin-top: 10px;
     color: #E2E1FF;
@@ -392,62 +411,165 @@ footer {
 
 
 @media screen and (max-width: 992px) {
-    nav, .btncontact{
+
+    header {
+        border: 0;
+        
+    }
+
+    li,
+    .btncontact {
         display: none;
+    }
+
+    li {
+        display: flex;
+        color: #FFF6D5;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        left: 105px;
+        top: 58px;
+        background-color:#774EFF;       
+        border: #E2E1FF solid 2px;
+        padding: 15px;
+        width: 50vw;
+        height: 80px;
+        font-size: 1.3em;
+        
+    }
+    span#burguer {
+        display:block;
+        margin: 0;        
+        text-align: center;
+        color:#1E005B;
+        padding:10px;
+        border-radius: 50% 50%;
+        background-color: #ecaacb94;
+        position: relative;
+        margin-right: 20px;
+              
+        
+    }
+
+    section#aboutme {
+        background: linear-gradient(#774EFF, #E2E1FF);
+        height: 100vh;
+    }
+
+
+    img#inicio {
+        align-items: center;
+        position: relative;
+        top: 320px;
+        right: 255px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        border: #774EFF solid 5px;
+        border-radius: 10px;
+        border-radius: 50% 50%;
+        width: 80%;
+        height: 30vh;
+
 
     }
 
-   img#inicio {
-    align-items: center;
-    position: relative;
-    margin-right: 40px;
-    bottom: 5px; 
-   right: 250px;  
-    margin-top: 50px;
-    width: 100%;
-    
-   }
-   h1 {
-    flex-flow: row wrap;
-    position: relative;
-    left: 0;
-    margin-bottom: 5px ;
-    font-size: 3em;
-    top: 400px;      
-    
-    
-   }
-   p#aboutme {    
-    flex-flow: row wrap;
-    position: relative;
-    margin: 2px;
-    top: 100px;    
-    right: 0px;
-    padding: 5px;
-   
-   }
-   p#aboutme2 {
-    top:106px;
-    right: 0px;
-    left: 70px;
-    
-    font-family: "Comfortaa";
-    margin-bottom: 10px;
-   }
-p#down {
-    display: none;
+    h1 {
+        color: #1E005B;
+        flex-flow: row wrap;
+        position: relative;
+        text-align: left;
+        font-size: 4em;
+        left: 0;
+        margin-bottom: 5px;
+        top: 80px;
+
+
+    }
+
+    p#aboutme {
+        flex-flow: row wrap;
+        position: relative;
+        bottom: 80px;
+        right: 0px;
+        padding: 0;
+        color: #FFF6D5;
+
+    }
+
+    p#aboutme2 {
+        flex-direction: row wrap;
+        width: 100%;   
+        bottom: 70px;
+        right: 0px;
+        text-align: left;        
+        font-family: "Comfortaa";
+        margin-bottom: 20px;
+        color: #FFF6D5;
+
+
+    }
+
+    p#down {
+        display: none;
+    }
+
+    .descript {
+
+        justify-content: center;
+        position: relative;
+        top: 100px;
+    }
+
+
+    p#descript {
+        text-align: left;
+        width: 80vw;
+        height: 50vh;
+
+
+
+    }
+
+    .formation2 {
+        flex-flow: row wrap;
+        width: 80%;
+        height: 60vh;
+        right: 20px;
+
+
+    }
+
+    .formation2>h4, .formation>p#formation {
+        text-align: left;
+        margin-left: 0;
+        padding: 0px;
+        left: 0;
+        line-height: 1.9em;
+        width: 100%;
+
+
+    }
+
+    .imgtecnologias {
+        flex-flow: row wrap;
+        gap: 5px;
+        left: 50px;
+        flex-flow: row wrap;
+        width: 100%;
+        height: 20vh;
+        margin: 5px;
+        padding: 2px;
+
+    }
+
+    .imgtecnologias>#imgtec {
+
+        flex-flow: row wrap;
+
+    }
+
+
 }
-.descript {
-    position: relative;
-    top: 100px;
-}
-p#descript {
-    text-align: left;
-    width: 70%;
-    background-color: #E2E1FF;
-    border-radius: 5px;
-    border: 1px solid #303030;
-    padding: 15px;
-}
-    
-}
+

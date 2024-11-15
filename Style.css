@@ -41,6 +41,7 @@ body {
 
 }
 
+
 header {
 
     background-color: #774EFF;
@@ -67,7 +68,7 @@ nav {
     align-self: center;
     position: fixed;
     right: 100px;
-    gap: 20px;
+    gap: 25px;
 
 
 }
@@ -78,7 +79,7 @@ li {
     position: relative;
     color: #FFF6D5;
     font-size: 1em;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
 }
@@ -98,7 +99,7 @@ li::after {
     left: 0;
     content: "";
     width: 0%;
-    height: 5px;
+    height: 3px;
     background-color: #FFF6D5;
     transition: 0.5s ease-out;
 
@@ -134,7 +135,7 @@ section.aboutme {
 img#inicio {
     display: flex;
     position: relative;
-    right: 80px;
+    right: 15px;
     bottom: 5px;
     border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     width: 300px;
@@ -146,13 +147,13 @@ img#inicio {
 h1 {
     display: flex;
     position: relative;
-    left: 105px;
     top: 150px;
+    left: 50px;
     color: #774EFF;
     font-family: "Gluten";
-    padding: 10px;
+    padding: 5px;
     font-size: 3.5em;
-    margin: 10px;
+
 
 
 }
@@ -168,11 +169,12 @@ p#down {
 p#aboutme {
 
     display: flex;
-    font-size: 1.3em;
+    font-size: 1.6em;
     justify-content: center;
+    align-items: center;
     position: relative;
+    right: 285px;
     bottom: 230px;
-    right: 255px;
     padding: 5px;
     font-family: "Comfortaa";
     color: #303030;
@@ -182,10 +184,12 @@ p#aboutme2 {
     display: flex;
     justify-content: center;
     color: #303030;
-    font-size: 1em;
+    font-size: 1.2em;
+    text-align: center;
     position: relative;
-    bottom: 210px;
-    right: 181px;
+    text-align: left;
+    bottom: 225px;
+    right:200px;
     font-family: "Comfortaa";
     margin-bottom: 10px;
 
@@ -196,13 +200,13 @@ p#aboutme2 {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 365px;
-    bottom: 200px;
+    left: 305px;
+    bottom: 210px;
     font-size: 0.8em;
     background-color: #E2E1FF;
     width: 130px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 2px 2px 1px 0px #da5095;
 
 }
@@ -230,6 +234,7 @@ span.material-icons {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 h2#descript {
@@ -345,62 +350,6 @@ h4 {
     font-weight: bolder;
 }
 
-h3#tec {
-    text-align: center;
-    color: #774EFF;
-    font-size: 2em;
-    margin-top: 80px;
-    margin-bottom: 40px;
-
-
-}
-
-.imgtecnologias {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 310px;
-    margin-bottom: 40px;
-    background-color: #E2E1FF;
-    border: 1px solid #3030306b;
-    border-radius: 20px;
-    width: 60%;
-    height: 20vh;
-    overflow: hidden;
-
-}
-
-.imgtecnologias::before {
-    content: "";
-    position: absolute;
-    width: 900px;
-    height: 80%;
-    background-color: #da5095;
-    animation: animate 5s linear infinite;
-}
-
-.imgtecnologias::after {
-    content: "";
-    position: absolute;
-    background-color: #E2E1FF;
-    inset: 5px;
-    border-radius: inherit;
-}
-
-.imgtecnologias>#imgtec {
-    display: flex;
-    align-items: center;
-}
-
-#imgtec {
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
 
 footer {
     background-color: #774EFF;
@@ -416,6 +365,8 @@ footer {
         border: 0;
 
     }
+
+
 
     li,
     .btncontact {
@@ -446,16 +397,10 @@ footer {
         align-items: center;
         text-align: center;
         color: #1E005B;
-        font-size: 2.5em;
-        border-radius: 50% 50%;
+        font-size: 3em;
         position: relative;
         margin-right: 30px;
         margin-top: 5px;
-       
-       
-
-
-
     }
 
     section#aboutme {
@@ -467,31 +412,30 @@ footer {
     img#inicio {
         align-items: center;
         position: relative;
-        top: 320px;
-        right: 230px;
-        margin-top: 80px;
-        margin-bottom: 40px;
-        border: #774EFF solid 5px;
+        padding: 15px;
+        top: 200px;
+        right: 270px;
         border-radius: 10px;
-        border-radius: 50% 50%;
-        width: 80%;
-        height: 30vh;
+        border-left: 5px solid #da5095;
+        border-top: 5px solid #da5095;
+        width: 100%;
+        height: 50vh;
 
 
     }
 
     h1 {
         color: #1E005B;
-        flex-flow: row wrap;
         position: relative;
+        justify-content: center;
         text-align: left;
         font-size: 4em;
-        padding:5x;
+        padding: 10x;
         left: 0;
         margin: 0;
-        right: 110px;
+        right: 50px;
         margin-bottom: 5px;
-        top: 80px;
+        top: 65px;
 
 
     }
@@ -499,25 +443,17 @@ footer {
     p#aboutme {
         flex-flow: row wrap;
         position: relative;
-        bottom: 95px;
-        right: 10px;
-        padding: 0;
+        text-align: center;
+        bottom: 240px;
+        padding: 5px;
+        right: 0;
         color: #FFF6D5;
 
     }
 
-    p#aboutme2 {
-        flex-direction: row wrap;
-        width: 100%;
-        bottom: 100px;
-        padding: 20px;
-        line-height: 1.5em;
-        right: 0px;
-        text-align: center;
-        font-family: "Comfortaa";
-        margin-bottom: 20px;
-        color: #FFF6D5;
 
+    p#aboutme2 {
+        display: none;
 
     }
 
@@ -530,11 +466,13 @@ footer {
         justify-content: center;
         position: relative;
         height: 100vh;
+        border-bottom: #1E005B solid 2px;
 
     }
 
     h2#descript {
-        text-align: center;
+        text-align: left;
+        padding: 10px;
         color: #E2E1FF;
         position: relative;
         top: 20px;
@@ -545,16 +483,12 @@ footer {
         padding: 20px;
         flex-flow: row wrap;
         text-align: left;
-        line-height: 1.9em;
+        line-height: 1.8em;
         font-size: 1.3em;
         color: #FFF6D5;
         font-weight: bold;
         position: relative;
         bottom: 10px;
-
-
-
-
     }
 
     h3 {
@@ -564,7 +498,7 @@ footer {
 
     .formation2 {
         align-items: flex-start;
-        margin-left: 0;
+        margin-left: 10px;
         bottom: 100px;
         padding: 20px;
         font-family: "Comfortaa";
@@ -588,38 +522,4 @@ footer {
 
 
     }
-
-    .tec {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    h3#tec {
-        bottom: 130px;
-    }
-
-    .imgtecnologias {
-        bottom: 130px;
-        height: 50vh;
-        width: 80vw;
-        gap: 0;
-        left: 0;
-        margin-bottom: 0;
-        padding: 10px;
-
-
-    }
-    .imgtecnologias2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        bottom: 300px;
-    }
-   
-
-
 }

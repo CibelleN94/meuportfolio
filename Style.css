@@ -307,37 +307,18 @@ h4 {
     line-height: 1.9em;
     background-color: #E2E1FF;
     border: 1px solid #3030306b;
-    border-radius: 20px;
+    border-radius: 3px;
     width: 50%;
     height: 50vh;
     overflow: hidden;
 }
 
-
-
-
-.formation2::before {
-    content: "";
-    position: absolute;
-    width: 900px;
-    height: 50%;
-    background-color: #da5095;
-    animation: animate 5s linear infinite;
-
-}
-
-@keyframes animate {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.formation2::after {
-    content: "";
-    position: absolute;
-    background-color: #E2E1FF;
-    inset: 5px;
-    border-radius: inherit;
+.formation2:hover  {
+   box-shadow: #1E005B 1px 1px 8px 1px;
+   transform: scale(1.1);
+   transition: 1s;
+   
+    
 }
 
 h4,

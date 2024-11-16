@@ -15,7 +15,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lexend+Mega:wght@100..900&family=Lilita+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
-
+   
 
 * {
     margin: 0px;
@@ -82,6 +82,7 @@ li {
     padding: 10px;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 li.active {
@@ -95,13 +96,13 @@ li:hover {
 
 li::after {
     position: absolute;
-    bottom: 2px;
+    bottom: 4px;
     left: 0;
     content: "";
     width: 0%;
     height: 3px;
-    background-color: #FFF6D5;
-    transition: 0.5s ease-out;
+    background-color: #da5095;
+    transition: 0.8s ease-out;
 
 }
 
@@ -144,15 +145,20 @@ img#inicio {
 
 }
 
+img#inicio:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
 h1 {
     display: flex;
     position: relative;
     top: 150px;
-    left: 50px;
+    left: 20px;
     color: #774EFF;
     font-family: "Gluten";
     padding: 5px;
-    font-size: 3.5em;
+    font-size: 4em;
 
 
 
@@ -173,7 +179,7 @@ p#aboutme {
     justify-content: center;
     align-items: center;
     position: relative;
-    right: 285px;
+    right: 325px;
     bottom: 230px;
     padding: 5px;
     font-family: "Comfortaa";
@@ -189,7 +195,7 @@ p#aboutme2 {
     position: relative;
     text-align: left;
     bottom: 225px;
-    right:200px;
+    right: 240px;
     font-family: "Comfortaa";
     margin-bottom: 10px;
 
@@ -200,7 +206,7 @@ p#aboutme2 {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 305px;
+    left: 265px;
     bottom: 210px;
     font-size: 0.8em;
     background-color: #E2E1FF;
@@ -234,13 +240,13 @@ span.material-icons {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 h2#descript {
     text-align: center;
     color: #774EFF;
-    font-size: 2.5em;
+    font-size: 3.8em;
     margin: 10px;
 
 
@@ -251,19 +257,21 @@ p#descript {
     text-align: center;
     font-family: "Comfortaa";
     line-height: 1.5em;
+    font-size: 1.5em;
 }
 
 .btncurriculo {
     display: flex;
     position: relative;
-    left: 810px;
+    left: 650px;
     margin-top: 20px;
     background-color: #E2E1FF;
     justify-content: center;
     align-items: center;
     color: #774EFF;
     font-weight: bolder;
-    width: 150px;
+    width: 200px;
+    height:50px;
     text-align: center;
     padding: 5px;
     border-radius: 10px;
@@ -284,9 +292,10 @@ p#descript {
 
 #h3formation {
     color: #774EFF;
+    text-align: center;
     font-size: 2em;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin: 20px;
+    margin-top: 40px;
 
 }
 
@@ -301,10 +310,10 @@ h4 {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-left: 40px;
-    padding: 20px;
+    padding: 10px;
+    font-size: 1.2em;
     font-family: "Comfortaa";
-    line-height: 1.9em;
+    line-height: 1.6em;
     background-color: #E2E1FF;
     border: 1px solid #3030306b;
     border-radius: 3px;
@@ -313,23 +322,83 @@ h4 {
     overflow: hidden;
 }
 
-.formation2:hover  {
-   box-shadow: #1E005B 1px 1px 8px 1px;
-   transform: scale(1.1);
-   transition: 1s;
-   
-    
+.formation2:hover {
+    box-shadow: #da5095 1px 1px 8px 1px;
+    transition: 0.4s;
+
+
 }
 
 h4,
 p#formation {
-    color: #1E005B;
+    color: #303030;
     z-index: 1;
 }
 
 h4 {
     font-weight: bolder;
 }
+
+h3#tec {
+    font-size: 2.6em;
+    color: #774EFF;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+
+#ordtec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Comfortaa";
+    padding: 10px;
+    margin: 10px;
+    background-color: #E2E1FF;
+    border: 1px solid #3030306b;
+    border-radius: 3px;
+    width: 140px;
+    position: relative;
+
+}
+
+.tec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #303030;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    bottom: 30px;
+}
+
+.tec2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding: 20px;
+    width: 100%;
+    color: #303030;
+    position: relative;
+    bottom: 80px;
+
+    
+}
+
+#ordtec:hover  {
+    font-weight: bolder;
+    color: #da5095;
+    box-shadow: #da5095 1px 1px 8px 1px;
+    transition: 0.2s;
+}
+
+
 
 
 footer {
@@ -340,7 +409,7 @@ footer {
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1080px) {
 
     header {
         border: 0;
@@ -382,6 +451,7 @@ footer {
         position: relative;
         margin-right: 30px;
         margin-top: 5px;
+        cursor: pointer;
     }
 
     section#aboutme {
@@ -453,6 +523,7 @@ footer {
 
     h2#descript {
         text-align: left;
+        font-size: 2.4em;
         padding: 10px;
         color: #E2E1FF;
         position: relative;
@@ -472,9 +543,11 @@ footer {
         bottom: 10px;
     }
 
-    h3 {
+    #h3formation {
+        font-size: 1.7em;
         position: relative;
-        bottom: 100px;
+        bottom: 50px;
+
     }
 
     .formation2 {
@@ -486,7 +559,7 @@ footer {
         line-height: 1.9em;
         border-radius: 20px;
         width: 80vw;
-        height: 50%;
+        height: 70%;
 
 
 
@@ -503,4 +576,45 @@ footer {
 
 
     }
-}
+
+    h3#tec {
+        position: relative;
+        bottom: 60px;
+        text-align: center;
+        color: #774EFF;
+        padding: 10px;
+        font-size: 2.4em;
+        line-height: 1.2em;
+        margin: 10px;
+    }
+    
+
+    .tec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        color: #303030;
+        position: relative;
+        right: 80px;
+        bottom: 65px;
+
+    }
+    .tec2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        color: #303030;
+        position: relative;
+        bottom: 350px;
+        left: 70px;
+
+    }
+
+    }
